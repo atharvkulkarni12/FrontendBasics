@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child psuedoselectors</title>
+    <style>
+        .container {
+            display: block;
+            width: 300px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        a[target] {
+            color: brown;
+        }
+
+        input[type="email"] {
+            color: yellow;
+            border: 3px solid black;
+        }
+
+        /* will apply properties to 3rd list element */
+        li:nth-child(3) {
+            color: teal;
+        }
+
+        /* will apply properties to every second element // 2n+0 can also br replaced by even */
+        li:nth-child(2n+0) {
+            color: tomato;
+        }
+
+        /* li:nth-child(even){
+            color:tomato;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="http://google.com" target="_blank">Go to google</a>
+        <a href="http://yahoo.com">Go to yahoo</a>
+        <form action="noaction.php" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="email" placeholder="enter your email">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+        </ul>
+    </div>
+</body>
+
+</html>
