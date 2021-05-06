@@ -1,0 +1,183 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+}
+
+/* Navigation Bar: Logo and Image */
+.logo{
+    margin: -14px 20px;
+}
+
+.logo img{
+    margin: 17px 20px;
+    height:50px;
+    width: 50px;;
+}
+
+/* Navigation Bar: List styling */
+#navbar{
+    position: fixed;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 15px;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height:10%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    position:fixed;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color:black;
+}
+#home::before{
+    content:"";
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:80%;
+    width: 100%;
+    z-index: -2;
+}
+.btn{
+        margin: 10px 10px;
+        background-color: brown;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid black;
+        border-radius: 15px;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: greenyellow 1px 0 10px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.h1-primary1{
+    color: brown;
+    font-size: 56px;
+    padding: 6px;
+    display: inline;
+    text-shadow: greenyellow 1px 0 10px;
+}
+.h1-primary2 a{
+    text-decoration: none;
+    color: powderblue;
+    font-size: 56px;
+    padding: 6px;
+    display: inline;
+    text-shadow: greenyellow 1px 0 10px;
+}
+.h1-primary2 a:hover{
+    text-decoration: none;
+    color: brown;
+    font-size: 56px;
+    padding: 6px;
+    display: inline;
+    text-shadow: greenyellow 1px 0 10px;
+}
+#home p{
+    color:powderblue;
+    text-shadow: greenyellow 1px 0 10px;
+}
+.headingmain{
+    display: flex;
+}
+
+/* services */
+.h1-primary{
+    color: brown;
+    font-size: 56px;
+    margin-top: 100px;
+    padding: 6px;
+    /* display: inline; */
+    text-shadow: greenyellow 1px 0 10px;
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    color: rgb(109, 126, 15);
+    font-size: 40px;
+    /* margin-top: 100px; */
+    /* padding: 6px; */
+    /* display: inline; */
+    text-shadow: rgb(135, 221, 221) 1px 0 10px;
+}
+img{
+    display: block;
+    margin:auto;
+}
+#services{
+    margin-top: -20px;
+    display: flex;
+}
+.box{
+    display: flex;
+    height:400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:50px auto;
+    /* background-color: lightsteelblue; */
+    border:10px solid #b57f7f;
+    border-radius: 10px;
+}
+.box p{
+    text-align: center;
+    padding:2px;
+    color: rgb(204, 124, 138);
+    text-shadow: greenyellow 1px 0 10px;
+    margin-bottom: 20px;
+}
+.box img{
+    margin-bottom: 10px;
+}
