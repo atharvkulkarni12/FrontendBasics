@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+.logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.logo img{
+    height: 31px;
+    filter: invert(1);
+    
+}
+
+#navbar{
+    background-color: rgb(223, 139, 139);
+    padding: 13px 20px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar li{
+    list-style: none;
+
+}
+
+#navbar li a{
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    padding:13px 19px;
+
+}
+#navbar li a:hover{
+    color:yellowgreen;
+    
+}
+
+#intro{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    background: center / contain repeat-x url("../static/bg1.jpg");
+    height:500px;
+    padding-bottom: 74px;
+}
+
+#intro div.small{
+    font-size: 27px;
+}
+#mission{
+    height: 300px;
+}
+
+#mission h2{
+    color:brown;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #ffe9cd;
+    width: 23vw;
+    height: 204px;
+    margin: 0px 20px;
+}
+
+.card h3{
+    
+    text-align: center;
+}
+
+.card-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+.card-img img{
+    height: 126px;
+}
+
+#sponsor{
+    height:300px;
+    background-color: #dea9e2ad;
+}
+
+#sponsor h2{
+    color:brown;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sponsors{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.spImage{
+    height:180px;
+}
+
+#footer{
+    height:50px;
+    background-color:black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
